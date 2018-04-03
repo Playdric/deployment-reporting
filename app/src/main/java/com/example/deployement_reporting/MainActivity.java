@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AppCenter.start(getApplication(), "eb105f6a-2dc4-4599-80fb-3c32c01eb92a",
                 Analytics.class, Crashes.class);
+        Analytics.trackEvent("My custom event");
     }
 }
